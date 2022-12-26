@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<style>
+  .jumbotron{
+    margin-bottom: 0px;
+  }
+
+  .main-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.main-section .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-section .left-main-section {
+    width: 750px;
+}
+
+.main-section .left-main-section h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 120%;
+    margin-top: 75px;
+}
+
+.main-section .left-main-section p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 200%;
+    text-align: left;
+}
+
+.right-main-section img {
+    display: flex;
+    width: 510px;
+    height: 800.89px;
+}
+
+/* quotes */
+.quotes-section {
+    width: 1040px;
+    height: 168px;
+    margin: 0 auto;
+}
+.quotes-section h2 {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    background: #F18A4E;
+    padding: 36px 90px;
+    border-radius: 24px;
+    
+}
+
+/* why */
+.why-section {
+    width: 1080px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+
+.why-section h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 120%;
+}
+
+.why-section p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: left;
+}
+</style>
+<body>
+  {% include "quiz/navbar.html" %}
+<br>
+<section id="section-jumbotron" class="jumbotron" style="margin-bottom: 0px; background-color: #FFFCD6;">
+  <div class="main-section">
+    <div class="container">
+        <div class="left-main-section">
+            <h1>English Literature Quiz</h1>
+            <p>Yuk belajar Bahasa Inggris!!
+                Dengan mengerjakan Elite Quiz ini kamu akan mempelajari 
+                bahasa inggris terutama masalah Grammar yang sering kali 
+                jadi masalah karena materinya yang sulit. Tapi tenang saja, 
+                belajar lewat Elite Quiz itu seru dan juga menambah ilmu 
+                tentunya...
+            </p>
+        </div>
+  
+        <div class="right-main-section">
+            <img src="{% static "image/Equiz crop.png" %}" alt="">
+        </div>
+    </div>
+  </div>
+  
+  <div class="quotes-section">
+    <div class="container">
+        <h2>“Your future is determined by what you start today”</h2>
+    </div>
+  </div>
+  
+  <div class="why-section">
+    <div class="container">
+        <h1>Kenapa harus belajar Bahasa Inggris?</h1>
+        <p>Mungkin kalian belum tahu nihh...
+            Kalau kalian bisa atau fasih berbahasa inggris, kalian akan mendapat jaminan untuk 
+            kesuksesan karir kalian. Dengan fasih berbahasa inggris, karirmu tentu akan bisa 
+            meningkat lebih dibanding yang tidak bisa Bahasa Inggris. Pasalnya, kamu memiliki 
+            kemampuan lebih dalam berkomunikasi menggunakan Bahasa Inggris sehingga karirmu 
+            bisa menjadi lebih cemerlang.
+        </p>
+    </div>
+  </div> 
+</section>
+  {% include "quiz/footer.html" %}
+
+
+</body>
+
+</html>
